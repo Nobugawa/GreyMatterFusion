@@ -9,11 +9,7 @@
     />
     <meta name="theme-color" content="#030814" />
     <title>Grey Matter Fusion</title>
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23030814'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%2387d7ff' stroke-width='4'/%3E%3Cpath d='M11 36c12-14 29-17 42-8' fill='none' stroke='%23d8b06c' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='47' cy='25' r='4' fill='%23ffffff'/%3E%3C/svg%3E"
-    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,10 +21,17 @@
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Grey Matter Fusion home">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span>Grey Matter Fusion</span>
+        <img
+          class="brand-logo"
+          src="assets/gmf-logo.png"
+          width="512"
+          height="128"
+          alt="Grey Matter Fusion"
+        />
       </a>
-      <p>Independent ventures. Connected ideas.</p>
+      <a class="contact-link" href="mailto:info@greymatterfusion.com">
+        info@greymatterfusion.com
+      </a>
     </header>
 
     <main id="top">
@@ -135,6 +138,7 @@
 
     <footer>
       <p>© <span id="year"></span> Grey Matter Fusion, Inc.</p>
+      <a href="mailto:info@greymatterfusion.com">info@greymatterfusion.com</a>
     </footer>
 
     <script src="script.js"></script>
