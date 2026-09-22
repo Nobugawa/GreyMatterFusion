@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Grey Matter Fusion is the home of independent digital, economic, and planetary ideas."
+    />
+    <meta name="theme-color" content="#030814" />
+    <title>Grey Matter Fusion</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23030814'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%2387d7ff' stroke-width='4'/%3E%3Cpath d='M11 36c12-14 29-17 42-8' fill='none' stroke='%23d8b06c' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='47' cy='25' r='4' fill='%23ffffff'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Grey Matter Fusion home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Grey Matter Fusion</span>
+      </a>
+      <p>Independent ventures. Connected ideas.</p>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">A small constellation of projects</p>
+        <h1 id="page-title">Ideas live in different worlds.<br />Curiosity connects them.</h1>
+        <p class="intro-copy">
+          Explore the celestial markers to discover each Grey Matter Fusion destination.
+        </p>
+      </section>
+
+      <section class="constellation-map" aria-label="Grey Matter Fusion destinations">
+        <div class="galaxy" role="img" aria-label="A luminous galaxy filled with stars and distant worlds">
+          <a
+            class="world world-emc2"
+            data-route="emc2"
+            href="#emc2"
+            aria-label="Learn about EMC2 Digital"
+          >
+            <span class="world-ring"></span>
+            <span class="world-label"><b>EMC2</b><small>Digital</small></span>
+          </a>
+
+          <a
+            class="world world-poa"
+            data-route="poa"
+            href="#poa"
+            aria-label="Learn about Paradox of Automation"
+          >
+            <span class="world-ring"></span>
+            <span class="world-label"><b>POA</b><small>Paradox of Automation</small></span>
+          </a>
+
+          <a
+            class="world world-gaea"
+            data-route="gaea"
+            href="#gaea"
+            aria-label="Learn about 1Gaea"
+          >
+            <span class="world-ring"></span>
+            <span class="world-label"><b>1G</b><small>1Gaea</small></span>
+          </a>
+        </div>
+
+        <svg class="route-lines" aria-hidden="true">
+          <defs>
+            <filter id="line-glow" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="2.5" result="blur" />
+              <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+            </filter>
+          </defs>
+          <path data-line="emc2"></path>
+          <path data-line="poa"></path>
+          <path data-line="gaea"></path>
+        </svg>
+
+        <div class="destinations">
+          <article class="destination destination-emc2" id="emc2" data-card="emc2">
+            <div class="destination-number">01</div>
+            <p class="destination-kicker">Digital infrastructure</p>
+            <h2>EMC2 Digital</h2>
+            <p>
+              Practical digital services for small businesses—from professional email setup and
+              deliverability to website trust and performance.
+            </p>
+            <a class="visit-link" href="https://emc2digital.com" target="_blank" rel="noopener">
+              Visit EMC2 Digital <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="destination destination-poa" id="poa" data-card="poa">
+            <div class="destination-number">02</div>
+            <p class="destination-kicker">Economics &amp; automation</p>
+            <h2>Paradox of Automation</h2>
+            <p>
+              An inquiry into what happens when automation expands productive capacity while
+              reducing the labor income and demand needed to sustain it.
+            </p>
+            <a
+              class="visit-link"
+              href="https://paradoxofautomation.com"
+              target="_blank"
+              rel="noopener"
+            >
+              Visit Paradox of Automation <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="destination destination-gaea" id="gaea" data-card="gaea">
+            <div class="destination-number">03</div>
+            <p class="destination-kicker">One shared planet</p>
+            <h2>1Gaea</h2>
+            <p>
+              A home for ideas about humanity's shared world and the long-term choices that shape
+              life, society, and the planet we all depend on.
+            </p>
+            <a class="visit-link" href="https://1gaea.com" target="_blank" rel="noopener">
+              Visit 1Gaea <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Grey Matter Fusion, Inc.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
